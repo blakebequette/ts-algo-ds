@@ -11,7 +11,7 @@ function binarySearch(arr, target) {
         mid = Math.floor((left + right) / 2);
         if (arr[mid] === target)
             return true;
-        if (arr[mid] > target) {
+        else if (arr[mid] > target) {
             right = mid - 1;
         }
         else {
@@ -24,3 +24,4 @@ exports.binarySearch = binarySearch;
 console.log(binarySearch(manualArr, 4));
 console.log(binarySearch(manualArr, 0));
 console.log(binarySearch(manualArr, 10));
+console.log(binarySearch(manualArr, 9));

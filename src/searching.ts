@@ -9,7 +9,7 @@ export function binarySearch(arr: number[], target: number): boolean{
     while (left <= right){
         mid = Math.floor((left + right)/2)
         if (arr[mid] === target) return true
-        if (arr[mid] > target){
+        else if (arr[mid] > target){
             right = mid - 1
         } else {
             left = mid + 1
@@ -18,6 +18,9 @@ export function binarySearch(arr: number[], target: number): boolean{
     return false 
 }
 
+
+
 console.log(binarySearch(manualArr, 4))
 console.log(binarySearch(manualArr, 0))
 console.log(binarySearch(manualArr, 10))
+console.log(binarySearch(manualArr, 9))
